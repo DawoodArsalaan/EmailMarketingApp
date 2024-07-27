@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "emailmanager.client/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "emailmanager.client/dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/emailmanager.client/dist/$1"
+    }
+  ]
+}
