@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -7,6 +6,7 @@ const ContactManager = () => {
     const [email, setEmail] = useState('');
     const [scheduledTime, setScheduledTime] = useState('');
 
+    // eslint-disable-next-line no-undef
     const apiBase = process.env.REACT_APP_API_BASE_URL;
 
     const sendEmail = async () => {
